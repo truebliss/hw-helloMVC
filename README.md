@@ -21,7 +21,9 @@ Servlet과 JSP를 이용하여 회원가입, 로그인 웹 애플리케이션 �
 ```
 <br>
 <br>
+
 1-2. registerform.jsp
+
 
 ![2](https://user-images.githubusercontent.com/68186349/94359076-f0a53d00-00df-11eb-9372-68d916d200bf.PNG)
 
@@ -38,7 +40,9 @@ Servlet과 JSP를 이용하여 회원가입, 로그인 웹 애플리케이션 �
 ```
 <br>
 <br>
+
 1-3. registersuccess.jsp
+
 
 ![3](https://user-images.githubusercontent.com/68186349/94359077-f0a53d00-00df-11eb-9915-2ea903fbe719.PNG)
 
@@ -54,7 +58,9 @@ Servlet과 JSP를 이용하여 회원가입, 로그인 웹 애플리케이션 �
 ```
 <br>
 <br>
+
 1-4. loginform.jsp 
+
 
 ![4](https://user-images.githubusercontent.com/68186349/94359078-f13dd380-00df-11eb-8d21-99fb8d0fe1da.PNG)
 
@@ -65,7 +71,9 @@ Servlet과 JSP를 이용하여 회원가입, 로그인 웹 애플리케이션 �
 ```
 <br>
 <br>
+
 1-5. loginfail.jsp - 비밀번호 틀리게 입력
+
 
 ![55](https://user-images.githubusercontent.com/68186349/94359611-6d85e600-00e3-11eb-9ed2-63154dfab13d.PNG)
 
@@ -75,7 +83,9 @@ Login Failed : ${id} is not present.
 ```
 <br>
 <br>
+
 1-6.  loginfail.jsp - 비밀번호 맞게 입력
+
 
 ![7](https://user-images.githubusercontent.com/68186349/94359081-f1d66a00-00df-11eb-843f-fc9c909cd330.PNG)
 
@@ -92,6 +102,7 @@ Login Failed : ${id} is not present.
 
 2-1. DoRegister.java
 
+
 <기능>
 registerform.jsp에서 입력 값들을 가져온다.
 addCustomer메소드에 전달해서 Customer객체를 생성한다.
@@ -105,7 +116,9 @@ CustomerService.addCustomer( new Customer(custormerId,password,name,gender,email
 
 <br>
 <br>
+
 2-2.  DoLogin.java
+
 
 <기능>
 loginform.jsp에서 아이디, 비밀번호 입력 값 가져온다.
@@ -126,7 +139,9 @@ dispatcher.forward(request, response);
 
 <br>
 <br>
+
 2-3. Home.java
+
 
 <기능>
 index.jsp 등 에서 링크연결기능을 담당한다.
@@ -146,7 +161,9 @@ dispatcher.forward(request, response);
 
 <br>
 <br>
+
 2-4. Customer.java
+
 
 <기능>
 Customer 객체 클래스
@@ -155,6 +172,7 @@ Customer 객체 클래스
 <br>
 
 2-5. CustomerService.java
+
 
 <기능>
 해시맵을 통해 객체를 저장하고, 

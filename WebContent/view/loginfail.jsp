@@ -7,7 +7,7 @@
 <title>Login Failed</title>
 </head>
 <body>
-	Login Failed : ${id} is not present
+	Login Failed : ${id} is not present.
 	<p> <a href="/hw-helloMVC/home?action=login">try again</a></p>
 </body>
 </html>
